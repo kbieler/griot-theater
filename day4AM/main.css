@@ -1,0 +1,142 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #6ea1b4;
+}
+
+.topper{
+    display: flex;
+    background-color: black;
+    justify-content: flex-start;
+}
+
+#the-name{
+    color:white;
+
+}
+.nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+a:link{
+    color: #b67174;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #91f0f7;
+}
+
+.hero{
+    background-image: url("images/theater-image-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+}
+
+#hero-text{
+    color:white;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 2px 2px 3px black, 0 0 35px #BB979B, 0 0 15px #B46D71;
+    font-size: 4rem;
+}
+
+.main-content{
+    display: flex;
+    background-color: #6ea1b4;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+}
+
+#month-banner{
+    background-color: #939aac;
+    width: 77vw;
+    height: 5vh;
+    font-weight: bolder;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border: 2px solid #00445b ;
+    text-shadow: color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px #BB979B, 0 0 5px #B46D71;
+    text-align: center;
+}
+
+.shows{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: grid;
+    grid-template-columns: .8fr 1.7fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5px 3px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "show-image show-info button"
+        "show-image show-info button"
+        "show-image show-info button"
+        "show-image show-info button";
+    border-bottom: 2px solid #00445b; 
+    padding: 10px;
+    }
+
+#show-image{
+    grid-area: show-image;
+    max-width: 250px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-right: 3vh;
+}
+
+#show-info{
+    grid-area: show-info;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 5vw;
+    padding: 10px;
+}
+
+#button{
+    grid-area: button;
+    padding-top: 10vh;
+}
+
+#read-more{
+    background-color: #B46D71;
+    box-shadow: inset 0px 12px 12px #6e5052;
+}
+
+.add-info{
+    display: flex;
+    height: 38vh;
+    margin-top: 5vh;
+    background-color: black;
+    color: #b4a6b5;
+    font-size: 18px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 12px;
+}
+
+.add-info h4{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+#map-image{
+  max-width: 275px;
+  height: auto;
+  padding-top: 18px;
+}
+
+#shows-list{
+   font-size: 17px;
+}
+
+#social{
+   font-size: 16px;
+}
